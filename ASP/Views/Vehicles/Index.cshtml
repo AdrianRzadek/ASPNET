@@ -1,0 +1,41 @@
+﻿@model IEnumerable<ASP.Controllers.Vehicle>
+
+@{
+    ViewData["Title"] = "VehicleList";
+}
+
+<h1>Vehicle List</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.VehicleId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VehicleName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VehicleId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VehicleName)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "Edit", new { vehicleId=item.VehicleId  }) |
+                @Html.ActionLink("VehicleDetails", "VehicleDetails", new {  vehicleId=item.VehicleId  }) |
+                    @Html.ActionLink("Delete", "Delete", new { vehicleId=item.VehicleId  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
