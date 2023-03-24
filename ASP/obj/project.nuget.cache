@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "oBb8SxEiaxZ19gHqF52KHVDPERDHAKZt+snDUCObOPq9FDtFTw5XuocrdWs5AWZK1Z0VDcs2LFqMWTKOFbqkkg==",
+  "dgSpecHash": "wyM7K898jcpYj2tzjV0uZPpTOlDuhpAOAaI92WWT/8J4FxgR7xsKocHsItvzG9G6FJPhin2NhvhHRuI/OojLDA==",
   "success": true,
   "projectFilePath": "C:\\Users\\adria\\source\\repos\\ASP\\ASPNET\\ASP\\ASP.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\adria\\.nuget\\packages\\fluentassertions\\6.10.0\\fluentassertions.6.10.0.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.15\\microsoft.aspnetcore.cryptography.internal.6.0.15.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.15\\microsoft.aspnetcore.cryptography.keyderivation.6.0.15.nupkg.sha512",
