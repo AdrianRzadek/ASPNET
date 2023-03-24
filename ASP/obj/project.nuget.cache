@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3I59pEEQv7Mp1kM+X9ZLAUo5KYcx+KPyCWAZodP3HsBin9rmxrHTahaht9jpbITAN/UTiRA6raoFuLhZ9By/zg==",
+  "dgSpecHash": "oBb8SxEiaxZ19gHqF52KHVDPERDHAKZt+snDUCObOPq9FDtFTw5XuocrdWs5AWZK1Z0VDcs2LFqMWTKOFbqkkg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adria\\source\\repos\\ASP\\ASP\\ASP.csproj",
+  "projectFilePath": "C:\\Users\\adria\\source\\repos\\ASP\\ASPNET\\ASP\\ASP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adria\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.15\\microsoft.aspnetcore.cryptography.internal.6.0.15.nupkg.sha512",
@@ -17,6 +17,7 @@
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.15\\microsoft.entityframeworkcore.abstractions.6.0.15.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.15\\microsoft.entityframeworkcore.analyzers.6.0.15.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.15\\microsoft.entityframeworkcore.design.6.0.15.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\6.0.15\\microsoft.entityframeworkcore.inmemory.6.0.15.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.15\\microsoft.entityframeworkcore.relational.6.0.15.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.15\\microsoft.entityframeworkcore.sqlserver.6.0.15.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.15\\microsoft.entityframeworkcore.tools.6.0.15.nupkg.sha512",

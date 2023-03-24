@@ -226,7 +226,7 @@
           "Microsoft.EntityFrameworkCore.Relational": "6.0.15"
         },
         "compile": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -237,6 +237,22 @@
         },
         "build": {
           "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.InMemory/6.0.15": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.15"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/6.0.15": {
@@ -1370,6 +1386,20 @@
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.InMemory/6.0.15": {
+      "sha512": "lRL5rTa6iM9SIubc75dTiQd2aYfURgEd7bz5tLA4T+++yOPFPVm9dCQ22ukGhnlJy6Xr9LAQEDOUrJmWDgByTw==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/6.0.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.6.0.15.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore.Relational/6.0.15": {
       "sha512": "ouk4es/CzwxjXl33mb2hJzitluc2CD9rujZVBaUy3w3fn8qMjlktMOhf5mIAS7e3sreBikOBwaxp9/y/N/O2NQ==",
       "type": "package",
@@ -2449,6 +2479,9 @@
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.15",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.15",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.15",
+      "Microsoft.EntityFrameworkCore >= 6.0.15",
+      "Microsoft.EntityFrameworkCore.Design >= 6.0.15",
+      "Microsoft.EntityFrameworkCore.InMemory >= 6.0.15",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.15",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.15"
     ]
@@ -2460,11 +2493,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adria\\source\\repos\\ASP\\ASP\\ASP.csproj",
+      "projectUniqueName": "C:\\Users\\adria\\source\\repos\\ASP\\ASPNET\\ASP\\ASP.csproj",
       "projectName": "ASP",
-      "projectPath": "C:\\Users\\adria\\source\\repos\\ASP\\ASP\\ASP.csproj",
+      "projectPath": "C:\\Users\\adria\\source\\repos\\ASP\\ASPNET\\ASP\\ASP.csproj",
       "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adria\\source\\repos\\ASP\\ASP\\obj\\",
+      "outputPath": "C:\\Users\\adria\\source\\repos\\ASP\\ASPNET\\ASP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2506,6 +2539,20 @@
             "version": "[6.0.15, )"
           },
           "Microsoft.AspNetCore.Identity.UI": {
+            "target": "Package",
+            "version": "[6.0.15, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.15, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.0.15, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[6.0.15, )"
           },

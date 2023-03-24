@@ -11,6 +11,9 @@
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.15",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.15",
           "Microsoft.AspNetCore.Identity.UI": "6.0.15",
+          "Microsoft.EntityFrameworkCore": "6.0.15",
+          "Microsoft.EntityFrameworkCore.Design": "6.0.15",
+          "Microsoft.EntityFrameworkCore.InMemory": "6.0.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.15",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.15"
         },
@@ -172,6 +175,17 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
+            "assemblyVersion": "6.0.15.0",
+            "fileVersion": "6.0.1523.11510"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.InMemory/6.0.15": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.15"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
             "assemblyVersion": "6.0.15.0",
             "fileVersion": "6.0.1523.11510"
           }
@@ -641,6 +655,13 @@
       "sha512": "sha512-fpK/x5BgGYxO0Uz1E8X/eiCZulsIvkWCPhFDaM54jiiRwlkWzE5mW+tzXpPWy7oY6rrd5JKXmvo2AqkRsNjKhQ==",
       "path": "microsoft.entityframeworkcore.design/6.0.15",
       "hashPath": "microsoft.entityframeworkcore.design.6.0.15.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/6.0.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lRL5rTa6iM9SIubc75dTiQd2aYfURgEd7bz5tLA4T+++yOPFPVm9dCQ22ukGhnlJy6Xr9LAQEDOUrJmWDgByTw==",
+      "path": "microsoft.entityframeworkcore.inmemory/6.0.15",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.6.0.15.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/6.0.15": {
       "type": "package",
