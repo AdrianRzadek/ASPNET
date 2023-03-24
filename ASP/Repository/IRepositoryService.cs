@@ -9,10 +9,10 @@ namespace ASP.Repository
         IQueryable<T> GetAllRecords();
         T GetSingle(Guid id);
         IQueryable<T> FindBy(Expression<Func<T, bool>> predicate);
-        ServiceResult Add(T entity);
-        ServiceResult Delete(T entity);
-       // ServiceResult Edit(T entity);
-        //ServiceResult Save();
+        RepositoryServiceResult Add(T entity);
+        RepositoryServiceResult Delete(T entity);
+        RepositoryServiceResult Edit(T entity);
+        RepositoryServiceResult Save();
     }
 
 }

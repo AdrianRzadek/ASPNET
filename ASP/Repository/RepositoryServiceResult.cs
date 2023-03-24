@@ -13,23 +13,23 @@ namespace ASP.Repository
         [Description("Informacja")]
         Info,
     }
-    public class ServiceResult
+    public class RepositoryServiceResult
     {
         public ServiceResultStatus Result { get; set; }
         public ICollection<String> Messages { get; set; }
-        public ServiceResult()
+        public RepositoryServiceResult()
         {
             Result = ServiceResultStatus.Succes;
             Messages = new List<string>();
         }
-        public static Dictionary<string, ServiceResult> CommonResults { get; set; } = new Dictionary<string,
-        ServiceResult>()
+        public static Dictionary<string, RepositoryServiceResult> CommonResults { get; set; } = new Dictionary<string,
+        RepositoryServiceResult>()
         {
-            {"NotFound" , new ServiceResult() {
+            {"NotFound" , new RepositoryServiceResult() {
                 Result =ServiceResultStatus.Error,
                 Messages = new List<string>( new string[] { "Nie znaleziono obiektu" }) 
             } },
-            {"OK" , new ServiceResult() {
+            {"OK" , new RepositoryServiceResult() {
             Result =ServiceResultStatus.Succes,
             Messages = new List<string>() } }
         };

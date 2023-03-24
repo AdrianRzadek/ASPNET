@@ -20,17 +20,28 @@ namespace ASP.Repository
             IQueryable<T> query = _set.AsQueryable().Where(predicate);
             return query;
         }
-        public virtual ServiceResult Add(T o)
+        public virtual RepositoryServiceResult Add(T o)
         {
             _set.Add(o);
-            return ServiceResult.CommonResults["OK"];
+            return RepositoryServiceResult.CommonResults["OK"];
         }
-        public virtual ServiceResult Delete(T obj)
+        public virtual RepositoryServiceResult Delete(T obj)
         {
             var toDelete = _set.SingleOrDefault(r => r.Id == obj.Id);
             if (toDelete != null)
                 _set.Remove(toDelete);
-            return ServiceResult.CommonResults["Del"];
+            return RepositoryServiceResult.CommonResults["OK"];
+        }
+        public virtual RepositoryServiceResult Edit(T obj)
+        {
+            var toUpdate = _set.SingleOrDefault(r => r.Id == obj.Id);
+
+            return RepositoryServiceResult.CommonResults["OK"];
+        }
+
+        public RepositoryServiceResult Save()
+        {
+            return RepositoryServiceResult.CommonResults["OK"];
         }
     }
 }
