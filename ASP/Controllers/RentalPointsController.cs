@@ -10,87 +10,87 @@ using ASP.Models;
 
 namespace ASP.Controllers
 {
-    public class Vehicle_Controller : Controller
+    public class RentalPointsController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public Vehicle_Controller(ApplicationDbContext context)
+        public RentalPointsController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Vehicle_
+        // GET: RentalPoints
         public async Task<IActionResult> Index()
         {
-              return _context.Vehicles != null ? 
-                          View(await _context.Vehicles.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Vehicles'  is null.");
+              return _context.RentalPoints != null ? 
+                          View(await _context.RentalPoints.ToListAsync()) :
+                          Problem("Entity set 'ApplicationDbContext.RentalPoints'  is null.");
         }
 
-        // GET: Vehicle_/Details/5
+        // GET: RentalPoints/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Vehicles == null)
+            if (id == null || _context.RentalPoints == null)
             {
                 return NotFound();
             }
 
-            var vehicle_ = await _context.Vehicles
+            var rentalPoint = await _context.RentalPoints
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (vehicle_ == null)
+            if (rentalPoint == null)
             {
                 return NotFound();
             }
 
-            return View(vehicle_);
+            return View(rentalPoint);
         }
 
-        // GET: Vehicle_/Create
+        // GET: RentalPoints/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Vehicle_/Create
+        // POST: RentalPoints/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name")] Vehicle_ vehicle_)
+        public async Task<IActionResult> Create([Bind("ID,Name")] RentalPoint rentalPoint)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(vehicle_);
+                _context.Add(rentalPoint);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(vehicle_);
+            return View(rentalPoint);
         }
 
-        // GET: Vehicle_/Edit/5
+        // GET: RentalPoints/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Vehicles == null)
+            if (id == null || _context.RentalPoints == null)
             {
                 return NotFound();
             }
 
-            var vehicle_ = await _context.Vehicles.FindAsync(id);
-            if (vehicle_ == null)
+            var rentalPoint = await _context.RentalPoints.FindAsync(id);
+            if (rentalPoint == null)
             {
                 return NotFound();
             }
-            return View(vehicle_);
+            return View(rentalPoint);
         }
 
-        // POST: Vehicle_/Edit/5
+        // POST: RentalPoints/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Name")] Vehicle_ vehicle_)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Name")] RentalPoint rentalPoint)
         {
-            if (id != vehicle_.ID)
+            if (id != rentalPoint.ID)
             {
                 return NotFound();
             }
@@ -99,12 +99,12 @@ namespace ASP.Controllers
             {
                 try
                 {
-                    _context.Update(vehicle_);
+                    _context.Update(rentalPoint);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!Vehicle_Exists(vehicle_.ID))
+                    if (!RentalPointExists(rentalPoint.ID))
                     {
                         return NotFound();
                     }
@@ -115,49 +115,49 @@ namespace ASP.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(vehicle_);
+            return View(rentalPoint);
         }
 
-        // GET: Vehicle_/Delete/5
+        // GET: RentalPoints/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Vehicles == null)
+            if (id == null || _context.RentalPoints == null)
             {
                 return NotFound();
             }
 
-            var vehicle_ = await _context.Vehicles
+            var rentalPoint = await _context.RentalPoints
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (vehicle_ == null)
+            if (rentalPoint == null)
             {
                 return NotFound();
             }
 
-            return View(vehicle_);
+            return View(rentalPoint);
         }
 
-        // POST: Vehicle_/Delete/5
+        // POST: RentalPoints/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Vehicles == null)
+            if (_context.RentalPoints == null)
             {
-                return Problem("Entity set 'ApplicationDbContext.Vehicles'  is null.");
+                return Problem("Entity set 'ApplicationDbContext.RentalPoints'  is null.");
             }
-            var vehicle_ = await _context.Vehicles.FindAsync(id);
-            if (vehicle_ != null)
+            var rentalPoint = await _context.RentalPoints.FindAsync(id);
+            if (rentalPoint != null)
             {
-                _context.Vehicles.Remove(vehicle_);
+                _context.RentalPoints.Remove(rentalPoint);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool Vehicle_Exists(int id)
+        private bool RentalPointExists(int id)
         {
-          return (_context.Vehicles?.Any(e => e.ID == id)).GetValueOrDefault();
+          return (_context.RentalPoints?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }
