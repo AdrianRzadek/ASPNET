@@ -5,109 +5,108 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ASP
 build_property.RootNamespace = ASP
-build_property.ProjectDir = C:\Users\adria\source\repos\ASP\ASPNET\ASP\
+build_property.ProjectDir = C:\Users\adria\OneDrive\Dokumenty\GitHub\ASPNET\ASP\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\adria\source\repos\ASP\ASPNET\ASP
+build_property.MSBuildProjectDirectory = C:\Users\adria\OneDrive\Dokumenty\GitHub\ASPNET\ASP
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Home/Index.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Home/Privacy.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Persons/Details.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Persons/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Persons/Edit.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Persons/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Persons/Index.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Persons/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/RentalPoints/Create.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/RentalPoints/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsUG9pbnRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/RentalPoints/Delete.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/RentalPoints/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsUG9pbnRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/RentalPoints/Details.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/RentalPoints/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsUG9pbnRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/RentalPoints/Edit.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/RentalPoints/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsUG9pbnRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/RentalPoints/Index.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/RentalPoints/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsUG9pbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Shared/Error.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Vehicles/Index.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Vehicles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Vehicles/VehicleDetails.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Vehicles/VehicleDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZXNcVmVoaWNsZURldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Vehicle_/Create.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Vehicle_/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZV9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Vehicle_/Delete.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Vehicle_/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZV9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Vehicle_/Details.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Vehicle_/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZV9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Vehicle_/Edit.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Vehicle_/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZV9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Vehicle_/Index.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Vehicle_/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZV9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/_ViewImports.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/_ViewStart.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Shared/_Layout.cshtml]
+[C:/Users/adria/OneDrive/Dokumenty/GitHub/ASPNET/ASP/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ejlkpthfcb
