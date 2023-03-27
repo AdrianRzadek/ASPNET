@@ -56,7 +56,7 @@ namespace ASP.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name")] RentalPoint rentalPoint)
+        public async Task<IActionResult> Create([Bind("ID,Name,Address")] RentalPoint rentalPoint)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace ASP.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Name")] RentalPoint rentalPoint)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Address")] RentalPoint rentalPoint)
         {
             if (id != rentalPoint.ID)
             {
