@@ -11,10 +11,10 @@ namespace ASP.Repository
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseInMemoryDatabase(databaseName: "TestDatabase"));
+                options.UseInMemoryDatabase(databaseName: "ApplicationDbContextModelSnapshot"));
 
             services.AddScoped(typeof(IRepositoryService<>),
-          typeof(RepositoryService<>));
+          typeof(InMemoryRepository<>));
         }
       
 
