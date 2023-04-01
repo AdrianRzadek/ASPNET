@@ -634,3 +634,7 @@ C:\Users\adria\OneDrive\Dokumenty\GitHub\ASPNET\ASP\obj\Debug\net6.0\refint\ASP.
 C:\Users\adria\OneDrive\Dokumenty\GitHub\ASPNET\ASP\obj\Debug\net6.0\ASP.pdb
 C:\Users\adria\OneDrive\Dokumenty\GitHub\ASPNET\ASP\obj\Debug\net6.0\ASP.genruntimeconfig.cache
 C:\Users\adria\OneDrive\Dokumenty\GitHub\ASPNET\ASP\obj\Debug\net6.0\ref\ASP.dll
+C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\Autofac.dll
+C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\AutoMapper.Contrib.Autofac.DependencyInjection.dll
+C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

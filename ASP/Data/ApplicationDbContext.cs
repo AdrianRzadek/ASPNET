@@ -14,10 +14,10 @@ namespace ASP.Data
             //options.
         }
 
-        public DbSet<Vehicle_> Vehicles { get; set; }
+        public DbSet<VehicleViewModel> Vehicles { get; set; }
        public DbSet<VehicleType> VehicleTypes { get; set; }
-       public DbSet<RentalPoint> RentalPoints { get; set; }
-       public DbSet<Reservation> Reservations { get; set; }
+       public DbSet<RentalPointViewModel> RentalPoints { get; set; }
+       public DbSet<ReservationViewModel> Reservations { get; set; }
 
       
 

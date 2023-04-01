@@ -1,6 +1,6 @@
 ﻿namespace ASP.Models
 {
-    public class ReservationsViewModel
+    public class ReservationDTO
     {
         public int VehicleID { get; set; }
     }

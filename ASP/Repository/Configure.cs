@@ -1,7 +1,6 @@
 ﻿using ASP.Data;
-using FluentAssertions.Common;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
+
 
 
 namespace ASP.Repository
@@ -15,6 +14,11 @@ namespace ASP.Repository
 
             services.AddScoped(typeof(IRepositoryService<>),
           typeof(InMemoryRepository<>));
+
+
+           
+            services.AddControllers();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
       
 

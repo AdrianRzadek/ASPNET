@@ -2,6 +2,9 @@
 {
     public class VehicleViewModel
     {
-        public int VehicleID { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+
     }
 }
