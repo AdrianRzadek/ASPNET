@@ -7,17 +7,19 @@ namespace ASP.App_Start
 {
     public class Automapper:Profile
     {
-        public static void Configure()
+        public MapperConfiguration Configure()
         {
 
             var config = new MapperConfiguration(cfg =>
 
                 {
-                  cfg.CreateMap<VehicleViewModel, VehicleDetailViewModel>();
-                   cfg.CreateMap<VehicleDetailViewModel, VehicleViewModel>();
+                    cfg.CreateMap<VehicleDetailViewModel, VehicleViewModel>();
+                    cfg.CreateMap<VehicleViewModel, VehicleDetailViewModel>();
+                  
                   // cfg.CreateMap<RentalPoint, RentalPoints>();
                    // cfg.CreateMap<RentalPoints, RentalPoint>();
                 });
+            return config;
             
         }
     }

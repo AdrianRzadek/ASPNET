@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ASP.Data;
 using ASP.Models;
+using AutoMapper;
 
 namespace ASP.Controllers
 {
@@ -18,15 +19,30 @@ namespace ASP.Controllers
         {
             _context = context;
         }
-
+       /* 
+        private readonly IMapper _mapper;
+        public VehicleDetailViewModel Index()
+        {
+            VehicleDetailViewModel vDTO = new()
+            {
+               VehicleId = 1,
+               VehicleColor = "Red",
+               VehicleMark = "Marka",
+               VehicleName = "Nazwa",
+               VehiclePrice = 111
+                
+            };
+           return _mapper.Map<VehicleDetailViewModel>(vDTO);
+        }
+        */
         // GET: Vehicle_
-        public async Task<IActionResult> Index()
+       public async Task<IActionResult> Index()
         {
               return _context.Vehicles != null ? 
-                          View(await _context.Vehicles.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Vehicles'  is null.");
+                         View(await _context.Vehicles.ToListAsync()) :
+                         Problem("Entity set 'ApplicationDbContext.Vehicles'  is null.");
         }
-
+     
         // GET: Vehicle_/Details/5
         public async Task<IActionResult> Details(int? id)
         {
