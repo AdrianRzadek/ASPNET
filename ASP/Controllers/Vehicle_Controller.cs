@@ -14,27 +14,15 @@ namespace ASP.Controllers
     public class Vehicle_Controller : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IMapper _mapper;
 
-        public Vehicle_Controller(ApplicationDbContext context)
+        public Vehicle_Controller(ApplicationDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
-       /* 
-        private readonly IMapper _mapper;
-        public VehicleDetailViewModel Index()
-        {
-            VehicleDetailViewModel vDTO = new()
-            {
-               VehicleId = 1,
-               VehicleColor = "Red",
-               VehicleMark = "Marka",
-               VehicleName = "Nazwa",
-               VehiclePrice = 111
-                
-            };
-           return _mapper.Map<VehicleDetailViewModel>(vDTO);
-        }
-        */
+
+        
         // GET: Vehicle_
        public async Task<IActionResult> Index()
         {
@@ -58,7 +46,8 @@ namespace ASP.Controllers
                 return NotFound();
             }
 
-            return View(vehicle_);
+            return View(_mapper.Map<VehicleViewModel>(vehicle_));
+       
         }
 
         // GET: Vehicle_/Create

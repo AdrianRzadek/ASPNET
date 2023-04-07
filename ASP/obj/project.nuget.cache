@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "V2VlBlw5udba0SzOYK+aIHvlmgCfrw1t+N+KOZuOvbSfLTC6xYs1xSqel/8ABetn7yHNMzNBJMdIDcq9MMsFLg==",
+  "dgSpecHash": "wcdKNr7dWMV+i+hlSNX3/aPZfIQo9WutWTmWCPVAOh8C6jK48UUUU0NMfAWp5i4iGUv0zZbeFbsMlIpQ9c4Xtw==",
   "success": true,
   "projectFilePath": "C:\\Users\\adria\\source\\repos\\ASP\\ASPNET\\ASP\\ASP.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\adria\\.nuget\\packages\\autofac\\6.5.0\\autofac.6.5.0.nupkg.sha512",
-    "C:\\Users\\adria\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
-    "C:\\Users\\adria\\.nuget\\packages\\automapper.contrib.autofac.dependencyinjection\\7.1.0\\automapper.contrib.autofac.dependencyinjection.7.1.0.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\fluentassertions\\6.10.0\\fluentassertions.6.10.0.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

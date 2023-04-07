@@ -1,14 +1,21 @@
-﻿using ASP.Models;
+﻿using ASP.Data;
+using ASP.Models;
 using AutoMapper;
+using System.Configuration;
 
 namespace ASP.App_Start
 {
     public class MappingProfile:Profile
     {
+
         public MappingProfile()
         {
-            CreateMap<VehicleDetailViewModel,VehicleViewModel>().ReverseMap();
-            CreateMap<VehicleViewModel, VehicleDetailViewModel>().ReverseMap();
+
+           CreateMap<VehicleViewModelDTO, VehicleViewModel>().ReverseMap()
+              // .ForMember(dest => dest.FullDescription, opt => opt.MapFrom(src => $"{src.Name} {src.Description}"));
+            ;
+
         }
+
     }
 }
