@@ -60,6 +60,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsUG9pbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/ReservationViewModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25WaWV3TW9kZWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/ReservationViewModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25WaWV3TW9kZWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/ReservationViewModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25WaWV3TW9kZWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/ReservationViewModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25WaWV3TW9kZWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/ReservationViewModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25WaWV3TW9kZWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -98,26 +118,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/VehicleViewModels/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVZpZXdNb2RlbHNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Vehicle_/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZV9cQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Vehicle_/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZV9cRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Vehicle_/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZV9cRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Vehicle_/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZV9cRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Vehicle_/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZV9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/_ViewImports.cshtml]

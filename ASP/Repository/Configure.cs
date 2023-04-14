@@ -21,7 +21,7 @@ namespace ASP.Repository
 
            
             services.AddControllersWithViews();
-            services.AddControllers();
+        
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddAutoMapper(typeof(MappingProfile));
             services.AddAutoMapper(typeof(Program));

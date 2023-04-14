@@ -4,9 +4,9 @@ namespace ASP.Models
 {
     public class DateValidationAttribute : ValidationAttribute
     {
-        public bool IsValid(ReservationViewModel reservation)
+        public bool IsValid(ReservationViewModel reservationViewModel)
         {
-            if (reservation.ReservationDate > reservation.ReservationDateEnd)
+            if (reservationViewModel.ReservationDate > reservationViewModel.ReservationDateEnd)
             {
                 return false;
             }
@@ -14,7 +14,7 @@ namespace ASP.Models
             return true;
         }
 
-
+       
 
     }
 

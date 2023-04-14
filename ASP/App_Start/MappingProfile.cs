@@ -11,9 +11,9 @@ namespace ASP.App_Start
         public MappingProfile()
         {
 
-           CreateMap<VehicleViewModelDTO, VehicleViewModel>().ReverseMap()
-              // .ForMember(dest => dest.FullDescription, opt => opt.MapFrom(src => $"{src.Name} {src.Description}"));
-            ;
+            CreateMap<VehicleViewModelDTO, VehicleViewModel>().ReverseMap();
+           
+           CreateMap<ReservationViewModelDTO, ReservationViewModel>().ReverseMap();
 
         }
 
