@@ -636,6 +636,7 @@ C:\Users\adria\OneDrive\Dokumenty\GitHub\ASPNET\ASP\obj\Debug\net6.0\ASP.genrunt
 C:\Users\adria\OneDrive\Dokumenty\GitHub\ASPNET\ASP\obj\Debug\net6.0\ref\ASP.dll
 C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\Areas\Admin\bootstrap\package-lock.json
-C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\Areas\Admin\bootstrap\package.json
-C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\Areas\Admin\bootstrap\vendor\fontawesome-free\package.json
+C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\Antlr3.Runtime.dll
+C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\System.Web.Optimization.dll
+C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\WebGrease.dll
