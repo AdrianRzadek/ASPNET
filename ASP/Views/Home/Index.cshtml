@@ -1,4 +1,9 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
     ViewData["Title"] = "ATH Bike Rental System";
 }
 
@@ -10,3 +15,11 @@
     <img src="https://cdn.shopify.com/s/files/1/0181/8445/files/298A7831_2048x2048.jpg?v=1646729443" alt="Vintage Bike" width="400" height="240"/>
     <img src="https://i.pinimg.com/736x/b2/80/d2/b280d25cb3f3b1aa483a6b4145a220d5--velo-vintage-vintage-bicycles.jpg" alt="Vintage Bike" width="400" height="240"/>
 </div>
+@if (User.IsInRole("Administrator"))
+{
+    <h1>Witaj Administrator</h1>
+}
+else
+{
+    <h1>Nie to</h1>
+}

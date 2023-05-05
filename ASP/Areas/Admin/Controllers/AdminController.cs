@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using System.Data;
-using ASP.Areas.Admin.Models;
 using Microsoft.AspNetCore.Identity;
+
 
 namespace ASP.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("admin")]
+    [Authorize(Roles = "Administrator")]
     public class AdminController : Controller
     {
         public AdminController()
