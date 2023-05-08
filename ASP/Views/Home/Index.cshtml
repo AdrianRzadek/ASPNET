@@ -6,20 +6,20 @@
 @{
     ViewData["Title"] = "ATH Bike Rental System";
 }
-
-<div class="text-center">
-    <h1 class="display-4">ATH Bike Rental System</h1>
-    <p><h3>Witamy na portalu wypożyczalni rowerów!</br>
-    Tutaj znajdziecie swój wymarzony sprzęt, pełen opis każdego z produktów do podglądnięcia na stronie.</h3></p>
-    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/74/c9/be.jpg" alt="Vintage Bike" width="400" height="240"/>
-    <img src="https://cdn.shopify.com/s/files/1/0181/8445/files/298A7831_2048x2048.jpg?v=1646729443" alt="Vintage Bike" width="400" height="240"/>
-    <img src="https://i.pinimg.com/736x/b2/80/d2/b280d25cb3f3b1aa483a6b4145a220d5--velo-vintage-vintage-bicycles.jpg" alt="Vintage Bike" width="400" height="240"/>
-</div>
 @if (User.IsInRole("Administrator"))
 {
     <h1>Witaj Administrator</h1>
 }
 else
 {
-    <h1>Nie to</h1>
+    <h1>Witaj</h1>
 }
+
+<div class="text-center">
+    <h1 class="display-4">ATH Bike Rental System</h1>
+    <p><h3>Witamy na portalu wypożyczalni rowerów!</br>
+    Tutaj znajdziecie swój wymarzony sprzęt, pełen opis każdego z produktów do podglądnięcia na stronie.</h3></p>
+    <img src="https://energy-bike.pl/wp-content/uploads/2019/03/57F4EC13-8BFD-4D8E-ACDA-1521EC3ACD9A.jpeg" alt="Vintage Bike" width="400" height="240" />
+    <img src="https://d-pt.ppstatic.pl/k/r/1/dd/f5/59a6d5e9c9962_p.jpg?1505117074" alt="Vintage Bike" width="400" height="240" />
+    <img src="https://bikeshop24.pl/img/c/33_thumb.jpg" alt="Vintage Bike" width="400" height="240" />
+</div>
