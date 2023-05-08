@@ -13,7 +13,7 @@ namespace ASP.Areas.Admin.Controllers
     {
         public AdminController()
         {
-            // do stuff
+           
         }
 
         public IActionResult Index()
