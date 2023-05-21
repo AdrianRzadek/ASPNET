@@ -923,3 +923,7 @@ C:\Users\adria\Dokumenty\GitHub\ASPNET\ASPNET\ASP\obj\Debug\net6.0\refint\ASP.dl
 C:\Users\adria\Dokumenty\GitHub\ASPNET\ASPNET\ASP\obj\Debug\net6.0\ASP.pdb
 C:\Users\adria\Dokumenty\GitHub\ASPNET\ASPNET\ASP\obj\Debug\net6.0\ASP.genruntimeconfig.cache
 C:\Users\adria\Dokumenty\GitHub\ASPNET\ASPNET\ASP\obj\Debug\net6.0\ref\ASP.dll
+C:\Users\adria\Dokumenty\GitHub\ASPNET\ASPNET\ASP\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\adria\Dokumenty\GitHub\ASPNET\ASPNET\ASP\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\adria\Dokumenty\GitHub\ASPNET\ASPNET\ASP\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\adria\Dokumenty\GitHub\ASPNET\ASPNET\ASP\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
