@@ -184,24 +184,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Areas/Users/Views/ReservationViewModels/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUmVzZXJ2YXRpb25WaWV3TW9kZWxzXENyZWF0ZS5jc2h0bWw=
+[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Areas/Users/Data/ReservationViewModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcRGF0YVxSZXNlcnZhdGlvblZpZXdNb2RlbHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Areas/Users/Views/ReservationViewModels/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUmVzZXJ2YXRpb25WaWV3TW9kZWxzXERlbGV0ZS5jc2h0bWw=
+[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Areas/Users/Data/ReservationViewModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcRGF0YVxSZXNlcnZhdGlvblZpZXdNb2RlbHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Areas/Users/Views/ReservationViewModels/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUmVzZXJ2YXRpb25WaWV3TW9kZWxzXERldGFpbHMuY3NodG1s
+[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Areas/Users/Data/ReservationViewModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcRGF0YVxSZXNlcnZhdGlvblZpZXdNb2RlbHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Areas/Users/Views/ReservationViewModels/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUmVzZXJ2YXRpb25WaWV3TW9kZWxzXEVkaXQuY3NodG1s
+[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Areas/Users/Data/ReservationViewModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcRGF0YVxSZXNlcnZhdGlvblZpZXdNb2RlbHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Areas/Users/Views/ReservationViewModels/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUmVzZXJ2YXRpb25WaWV3TW9kZWxzXEluZGV4LmNzaHRtbA==
+[C:/Users/adria/source/repos/ASP/ASPNET/ASP/Areas/Users/Data/ReservationViewModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcRGF0YVxSZXNlcnZhdGlvblZpZXdNb2RlbHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/adria/source/repos/ASP/ASPNET/ASP/Views/Home/Index.cshtml]

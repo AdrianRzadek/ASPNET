@@ -1,29 +1,10 @@
-﻿@model ASP.Areas.Users.Models.ReservationViewModel
+﻿@model ASP.Models.ReservationViewModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 @{
     ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-@{
-    var today = DateTime.Now.Date;
-    var minDate = new DateTime(today.Year, 1, 1);
-    var maxDate = new DateTime(today.Year, 12, 31);
-}
-<script>
-    function itemValidator(date) {
-        var weekday = date.getDay();
-        return weekday != 0 && weekday != 6;
-    }
-</script>
-<div>
-    <c1-calendar value="@today" min="@minDate" max="@maxDate" item-validator="itemValidator" width="300px">
-    </c1-calendar>
-</div>;
-
-
-
-
 
 <h1>Create</h1>
 
@@ -45,13 +26,13 @@
             </div>
             <div class="form-group">
                 <label asp-for="ReservationDate" class="control-label"></label>
-                <input asp-for="ReservationDate" class="form-control" value="@today" min="@minDate" max="@maxDate" item-validator="itemValidator" width="300px" />
-                <!--  <span asp-validation-for="ReservationDate" class="text-danger"></span>-->
+                <input asp-for="ReservationDate" class="form-control" />
+                <span asp-validation-for="ReservationDate" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ReservationDateEnd" class="control-label"></label>
-                <input asp-for="ReservationDateEnd" class="form-control" value="@today" min="@minDate" max="@maxDate" item-validator="itemValidator" width="300px" />
-                <!--  <span asp-validation-for="ReservationDateEnd" class="text-danger"></span> -->
+                <input asp-for="ReservationDateEnd" class="form-control" />
+                <span asp-validation-for="ReservationDateEnd" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -64,3 +45,6 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -5,7 +5,6 @@ using ASP.Models;
 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Build.Evaluation;
-using ASP.Areas.Users.Models;
 
 namespace ASP.Data
 {
