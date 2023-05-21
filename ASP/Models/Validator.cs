@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using ASP.Areas.Users.Models;
 
 namespace ASP.Models
 {

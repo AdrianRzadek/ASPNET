@@ -31,10 +31,7 @@
     <Folder Include="Areas\Admin\Data\Nowy folder\" />
     <Folder Include="Areas\Admin\Models\Nowy folder\" />
     <Folder Include="Areas\Identity\Data\" />
-    <Folder Include="Areas\Users\Controllers\" />
     <Folder Include="Areas\Users\Data\" />
-    <Folder Include="Areas\Users\Models\" />
-    <Folder Include="Areas\Users\Views\" />
   </ItemGroup>
 
 </Project>

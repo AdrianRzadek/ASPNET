@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adria\\Dokumenty\\GitHub\\ASPNET\\ASPNET\\ASP\\ASP.csproj": {}
+    "C:\\Users\\adria\\source\\repos\\ASP\\ASPNET\\ASP\\ASP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adria\\Dokumenty\\GitHub\\ASPNET\\ASPNET\\ASP\\ASP.csproj": {
+    "C:\\Users\\adria\\source\\repos\\ASP\\ASPNET\\ASP\\ASP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adria\\Dokumenty\\GitHub\\ASPNET\\ASPNET\\ASP\\ASP.csproj",
+        "projectUniqueName": "C:\\Users\\adria\\source\\repos\\ASP\\ASPNET\\ASP\\ASP.csproj",
         "projectName": "ASP",
-        "projectPath": "C:\\Users\\adria\\Dokumenty\\GitHub\\ASPNET\\ASPNET\\ASP\\ASP.csproj",
+        "projectPath": "C:\\Users\\adria\\source\\repos\\ASP\\ASPNET\\ASP\\ASP.csproj",
         "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adria\\Dokumenty\\GitHub\\ASPNET\\ASPNET\\ASP\\obj\\",
+        "outputPath": "C:\\Users\\adria\\source\\repos\\ASP\\ASPNET\\ASP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -109,7 +109,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -121,7 +122,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

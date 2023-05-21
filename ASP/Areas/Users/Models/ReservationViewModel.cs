@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using ASP.Models;
 
-namespace ASP.Models
+namespace ASP.Areas.Users.Models
 {
     public class ReservationViewModel
     {
@@ -9,7 +10,7 @@ namespace ASP.Models
         [StringLength(20)]
         public string Name { get; set; }
         [Phone]
-        public int Phone {  get; set; }
+        public int Phone { get; set; }
 
         [DateValidation]
         public DateTime? ReservationDate { get; set; }

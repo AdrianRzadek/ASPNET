@@ -927,3 +927,7 @@ C:\Users\adria\Dokumenty\GitHub\ASPNET\ASPNET\ASP\bin\Debug\net6.0\Microsoft.Ope
 C:\Users\adria\Dokumenty\GitHub\ASPNET\ASPNET\ASP\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\adria\Dokumenty\GitHub\ASPNET\ASPNET\ASP\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\adria\Dokumenty\GitHub\ASPNET\ASPNET\ASP\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\adria\source\repos\ASP\ASPNET\ASP\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll

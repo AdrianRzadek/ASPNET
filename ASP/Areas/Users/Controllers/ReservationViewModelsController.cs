@@ -9,9 +9,14 @@ using ASP.Data;
 using ASP.Models;
 using AutoMapper;
 using System.ComponentModel.DataAnnotations;
+using ASP.Areas.Users.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
-namespace ASP.Controllers
+namespace ASP.Areas.Users.Controllers
 {
+   
+   
     public class ReservationViewModelsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -24,11 +29,13 @@ namespace ASP.Controllers
         }
 
         // GET: ReservationViewModels
+        [Area("Users")]
+        [Route("users")]
         public async Task<IActionResult> Index()
         {
-              return _context.Reservations != null ? 
-                          View(await _context.Reservations.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Reservations'  is null.");
+            return _context.Reservations != null ?
+                        View(await _context.Reservations.ToListAsync()) :
+                        Problem("Entity set 'ApplicationDbContext.Reservations'  is null.");
         }
 
         // GET: ReservationViewModels/Details/5
@@ -46,11 +53,11 @@ namespace ASP.Controllers
                 return NotFound();
             }
             return View(_mapper.Map<VehicleViewModel>(reservationViewModel));
-            
+
         }
 
         // GET: ReservationViewModels/Create
-        public IActionResult Create()
+        public ActionResult Create()
         {
             return View();
         }
@@ -58,18 +65,18 @@ namespace ASP.Controllers
         // POST: ReservationViewModels/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Phone,ReservationDate,ReservationDateEnd")] ReservationViewModel reservationViewModel)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(reservationViewModel);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(_mapper.Map<ReservationViewModel>(reservationViewModel));
-        }
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Create([Bind("ID,Name,Phone,ReservationDate,ReservationDateEnd")] ReservationViewModel reservationViewModel)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        _context.Add(reservationViewModel);
+        //        await _context.SaveChangesAsync();
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    return View(_mapper.Map<ReservationViewModel>(reservationViewModel));
+        //}
 
         /*  [HttpPost]
           public IActionResult Create(ReservationViewModel rezerwacja)
@@ -168,14 +175,14 @@ namespace ASP.Controllers
             {
                 _context.Reservations.Remove(reservationViewModel);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ReservationViewModelExists(int id)
         {
-          return (_context.Reservations?.Any(e => e.ID == id)).GetValueOrDefault();
+            return (_context.Reservations?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }

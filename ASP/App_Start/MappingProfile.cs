@@ -1,4 +1,5 @@
-﻿using ASP.Data;
+﻿using ASP.Areas.Users.Models;
+using ASP.Data;
 using ASP.Models;
 using AutoMapper;
 using System.Configuration;
