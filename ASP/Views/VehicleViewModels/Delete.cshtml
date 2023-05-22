@@ -11,22 +11,25 @@
     <h4>VehicleViewModel</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
+        <dd>
+            @Html.DisplayNameFor(model => model.VehicleId)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleName)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
+        <dd>
+            @Html.DisplayNameFor(model => model.VehicleMark)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleColor)
+        </dt>
+        <dd>
+            @Html.DisplayNameFor(model => model.VehiclePrice)
         </dd>
     </dl>
     
     <form asp-action="Delete">
-        <input type="hidden" asp-for="ID" />
+        <input type="hidden" asp-for="VehicleId" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-action="Index">Back to List</a>
     </form>

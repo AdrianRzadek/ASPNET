@@ -41,7 +41,7 @@ namespace ASP.Controllers
             }
 
             var vehicleViewModel = await _context.Vehicles
-                .FirstOrDefaultAsync(m => m.ID == id);
+                .FirstOrDefaultAsync(m => m.VehicleId == id);
             if (vehicleViewModel == null)
             {
                 return NotFound();
@@ -95,9 +95,9 @@ namespace ASP.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Description")] VehicleViewModel vehicleViewModel)
+        public async Task<IActionResult> Edit(int id, [Bind("VehicleId,VehicleName,VehicleMark,VehicleColor,VehiclePrice")] VehicleViewModel vehicleViewModel)
         {
-            if (id != vehicleViewModel.ID)
+            if (id != vehicleViewModel.VehicleId)
             {
                 return NotFound();
             }
@@ -111,7 +111,7 @@ namespace ASP.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!VehicleViewModelExists(vehicleViewModel.ID))
+                    if (!VehicleViewModelExists(vehicleViewModel.VehicleId))
                     {
                         return NotFound();
                     }
@@ -134,7 +134,7 @@ namespace ASP.Controllers
             }
 
             var vehicleViewModel = await _context.Vehicles
-                .FirstOrDefaultAsync(m => m.ID == id);
+                .FirstOrDefaultAsync(m => m.VehicleId == id);
             if (vehicleViewModel == null)
             {
                 return NotFound();
@@ -164,7 +164,7 @@ namespace ASP.Controllers
 
         private bool VehicleViewModelExists(int id)
         {
-          return (_context.Vehicles?.Any(e => e.ID == id)).GetValueOrDefault();
+          return (_context.Vehicles?.Any(e => e.VehicleId == id)).GetValueOrDefault();
         }
     }
 }

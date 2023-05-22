@@ -6,11 +6,14 @@ namespace ASP.Models
     public class VehicleViewModelDTO
     {
         [Required]
-        public int ID { get; set; }
+        [Key]
+        public int VehicleId { get; set; }
         [StringLength(10)]
-        public string Name { get; set; }
+        public string VehicleName { get; set; }
         [StringLength(30)]
-        public string Description { get; set; }
+        public string VehicleMark { get; set; }
+        public string VehicleColor { get; set; }
+        public string VehiclePrice { get; set; }
 
     }
 }
