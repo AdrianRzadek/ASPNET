@@ -7,25 +7,31 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ASP.Data;
 using ASP.Models;
+using ASP.Repository;
 
 namespace ASP.Areas.Users.Controllers
 {
     [Area("Users")]
+   
     public class ReservationViewModelsController : Controller
     {
         private readonly ApplicationDbContext _context;
+       // private readonly RepositoryService() _repositoryService;
 
         public ReservationViewModelsController(ApplicationDbContext context)
         {
             _context = context;
+            
         }
 
         // GET: Users/ReservationViewModels
+        [Route("users")]
         public async Task<IActionResult> Index()
         {
-              return _context.Reservations != null ? 
-                          View(await _context.Reservations.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Reservations'  is null.");
+
+            return _context.Vehicles != null ?
+                        View(await _context.Vehicles.ToListAsync()) :
+                        Problem("Entity set 'ApplicationDbContext.Reservations'  is null.");
         }
 
         // GET: Users/ReservationViewModels/Details/5
@@ -47,17 +53,14 @@ namespace ASP.Areas.Users.Controllers
         }
 
         // GET: Users/ReservationViewModels/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
+        // [Route("Users/ReservationViewModels/Create")]
+
+
 
         // POST: Users/ReservationViewModels/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Phone,ReservationDate,ReservationDateEnd")] ReservationViewModel reservationViewModel)
+        [Route("Create")]
+
+        public async Task<IActionResult> Create([Bind("ID,Name,Phone,ReservationDate,ReservationDateEnd,Status")] ReservationViewModel reservationViewModel)
         {
             if (ModelState.IsValid)
             {
@@ -67,7 +70,7 @@ namespace ASP.Areas.Users.Controllers
             }
             return View(reservationViewModel);
         }
-
+     
         // GET: Users/ReservationViewModels/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {

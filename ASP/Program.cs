@@ -1,4 +1,6 @@
+using ASP.App_Start;
 using ASP.Data;
+using ASP.Repository;
 using FluentAssertions.Common;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -11,22 +13,48 @@ namespace ASP
         public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            //   builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            //       options.UseInMemoryDatabase(databaseName: "ApplicationDbContextModelSnapshot"));
+
+
+
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+              options.UseInMemoryDatabase(databaseName: "ApplicationDbContextModelSnapshot"));
+
+          
+            builder.Services.AddScoped(typeof(InMemoryRepository<>));
+
+
+
+
 
             // Add services to the container.
-            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-            builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(connectionString));
-            builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+            // var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+            //builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            //  options.UseSqlServer(connectionString));
+            // builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-          
+
+
+            builder.Services.AddScoped(typeof(RepositoryService<>));
+
+
+            builder.Services.AddControllersWithViews();
+
+            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            builder.Services.AddAutoMapper(typeof(MappingProfile));
+            builder.Services.AddAutoMapper(typeof(Program));
+
+            builder.Services.AddMvc();
+
 
             builder.Services.AddControllersWithViews();
             builder.Services.AddAutoMapper(typeof(Program));
 
-            var app = builder.Build();
+           var app = builder.Build();
             
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -64,12 +92,27 @@ namespace ASP
                   pattern: "{area:exists}/{controller=ReservationViewModelsController}/{action=Index}/{id?}"
                 );
             });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                  name: "Users",
+                  pattern: "{area:exists}/{controller=ReservationViewModelsController}/{action=Create}/{id?}"
+                );
+            });
 
 
 
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
+            app.MapControllerRoute(
+              name: "Reservation",
+              pattern: "{controller=ReservationViews}/{action=Index}/{id?}");
+
+
+
             app.MapRazorPages();
 
            using(var scope = app.Services.CreateScope())

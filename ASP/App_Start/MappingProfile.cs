@@ -11,9 +11,9 @@ namespace ASP.App_Start
         public MappingProfile()
         {
 
-            CreateMap<VehicleViewModelDTO, VehicleViewModel>().ReverseMap();
            
-           CreateMap<ReservationViewModelDTO, ReservationViewModel>().ReverseMap();
+
+            CreateMap<VehicleViewModel, ReservationViewModel>().ReverseMap();
 
         }
 

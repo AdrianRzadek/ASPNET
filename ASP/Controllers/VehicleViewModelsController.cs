@@ -7,19 +7,16 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ASP.Data;
 using ASP.Models;
-using AutoMapper;
 
 namespace ASP.Controllers
 {
     public class VehicleViewModelsController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private readonly IMapper _mapper;
 
-        public VehicleViewModelsController(ApplicationDbContext context, IMapper mapper)
+        public VehicleViewModelsController(ApplicationDbContext context)
         {
             _context = context;
-            _mapper = mapper;
         }
 
         // GET: VehicleViewModels
@@ -31,8 +28,6 @@ namespace ASP.Controllers
         }
 
         // GET: VehicleViewModels/Details/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Vehicles == null)
@@ -47,23 +42,21 @@ namespace ASP.Controllers
                 return NotFound();
             }
 
-            return View(_mapper.Map<VehicleViewModel>(vehicleViewModel));
+            return View(vehicleViewModel);
         }
 
         // GET: VehicleViewModels/Create
-        
         public IActionResult Create()
         {
             return View();
         }
-       
-        
+
         // POST: VehicleViewModels/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Description")] VehicleViewModel vehicleViewModel)
+        public async Task<IActionResult> Create([Bind("VehicleId,VehicleName,VehicleMark,VehicleColor,VehiclePrice")] VehicleViewModel vehicleViewModel)
         {
             if (ModelState.IsValid)
             {
@@ -71,7 +64,7 @@ namespace ASP.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(_mapper.Map<VehicleViewModel>(vehicleViewModel));
+            return View(vehicleViewModel);
         }
 
         // GET: VehicleViewModels/Edit/5
@@ -87,7 +80,7 @@ namespace ASP.Controllers
             {
                 return NotFound();
             }
-            return View(_mapper.Map<VehicleViewModel>(vehicleViewModel));
+            return View(vehicleViewModel);
         }
 
         // POST: VehicleViewModels/Edit/5
@@ -122,7 +115,7 @@ namespace ASP.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(_mapper.Map<VehicleViewModel>(vehicleViewModel));
+            return View(vehicleViewModel);
         }
 
         // GET: VehicleViewModels/Delete/5
@@ -140,7 +133,7 @@ namespace ASP.Controllers
                 return NotFound();
             }
 
-             return View(_mapper.Map<VehicleViewModel>(vehicleViewModel));
+            return View(vehicleViewModel);
         }
 
         // POST: VehicleViewModels/Delete/5

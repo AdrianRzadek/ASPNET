@@ -295,3 +295,4 @@ C:\Users\adria\source\repos\ASP\ASPNET\ASP\obj\Debug\net7.0\refint\ASP.dll
 C:\Users\adria\source\repos\ASP\ASPNET\ASP\obj\Debug\net7.0\ASP.pdb
 C:\Users\adria\source\repos\ASP\ASPNET\ASP\obj\Debug\net7.0\ASP.genruntimeconfig.cache
 C:\Users\adria\source\repos\ASP\ASPNET\ASP\obj\Debug\net7.0\ref\ASP.dll
+C:\Users\adria\source\repos\ASP\ASPNET\ASP\obj\Debug\net7.0\scopedcss\Areas\Users\Views\Shared\_Layout.cshtml.rz.scp.css

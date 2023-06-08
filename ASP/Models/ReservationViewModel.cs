@@ -14,7 +14,6 @@ namespace ASP.Models
 
         public DateTime? ReservationDate { get; set; }
         public DateTime ?ReservationDateEnd { get; set; }
-           
-        
+        public string? Status { get; set; }
     }
 }

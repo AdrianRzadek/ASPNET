@@ -14,6 +14,7 @@ namespace ASP.Models
         public string VehicleMark { get; set; }
          public string VehicleColor {get; set; }
          public string VehiclePrice {  get; set; }
+        public bool IsRented { get; set; }
 
 
     }

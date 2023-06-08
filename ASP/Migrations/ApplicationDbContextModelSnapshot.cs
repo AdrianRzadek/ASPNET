@@ -98,6 +98,9 @@ namespace ASP.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("VehicleId"));
 
+                    b.Property<bool>("IsRented")
+                        .HasColumnType("bit");
+
                     b.Property<string>("VehicleColor")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
