@@ -23,7 +23,6 @@ namespace ASP.Data
         public DbSet<RentalPointViewModel> RentalPoints { get; set; }
         public DbSet<ReservationViewModel> Reservations { get; set; }
 
-      
 
 
 
