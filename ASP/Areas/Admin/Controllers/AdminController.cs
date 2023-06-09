@@ -60,7 +60,7 @@ namespace ASP.Areas.Admin.Controllers
         {
             return View();
         }
-        [Route("admin/ReservationList")]
+       [Route("admin/ReservationList")]
         public async Task<IActionResult> ReservationList()
         {
             return _context.Reservations != null ?
@@ -69,7 +69,29 @@ namespace ASP.Areas.Admin.Controllers
         }
 
         [Route("admin/Edit")]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Phone,ReservationDate,ReservationDateEnd,Status")] ReservationViewModel reservationViewModel)
+
+        // GET: HomeController/Edit/5
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null || _context.Reservations == null)
+            {
+                return NotFound();
+            }
+
+            var reservationViewModel = await _context.Reservations.FindAsync(id);
+            if (reservationViewModel == null)
+            {
+                return NotFound();
+            }
+            return View(reservationViewModel);
+        }
+
+        // POST: Admin/ReservationViewModels/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Phone,VehicleId,ReservationDate,ReservationDateEnd,Status")] ReservationViewModel reservationViewModel)
         {
             if (id != reservationViewModel.ID)
             {
@@ -94,11 +116,11 @@ namespace ASP.Areas.Admin.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(ReservationList));
             }
             return View(reservationViewModel);
         }
-
+     
         // GET: Users/ReservationViewModels/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
