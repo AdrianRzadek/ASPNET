@@ -12,27 +12,27 @@ namespace ASP
     {
         public static async Task Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
-            //   builder.Services.AddDbContext<ApplicationDbContext>(options =>
-            //       options.UseInMemoryDatabase(databaseName: "ApplicationDbContextModelSnapshot"));
+          var builder = WebApplication.CreateBuilder(args);
+          //     builder.Services.AddDbContext<ApplicationDbContext>(options =>
+             //     options.UseInMemoryDatabase(databaseName: "ApplicationDbContextModelSnapshot"));
 
 
 
-            builder.Services.AddDbContext<ApplicationDbContext>(options =>
-              options.UseInMemoryDatabase(databaseName: "ApplicationDbContextModelSnapshot"));
+           // builder.Services.AddDbContext<ApplicationDbContext>(options =>
+           //   options.UseInMemoryDatabase(databaseName: "ApplicationDbContextModelSnapshot"));
 
           
-            builder.Services.AddScoped(typeof(InMemoryRepository<>));
+       //     builder.Services.AddScoped(typeof(InMemoryRepository<>));
 
 
 
 
 
             // Add services to the container.
-            // var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-            //builder.Services.AddDbContext<ApplicationDbContext>(options =>
-            //  options.UseSqlServer(connectionString));
-            // builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+              options.UseSqlServer(connectionString));
+             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddRoles<IdentityRole>()

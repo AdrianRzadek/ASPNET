@@ -390,3 +390,5 @@ C:\Users\adria\source\repos\ASP\ASPNET\Test1\obj\Debug\net7.0\refint\Test1.dll
 C:\Users\adria\source\repos\ASP\ASPNET\Test1\obj\Debug\net7.0\Test1.pdb
 C:\Users\adria\source\repos\ASP\ASPNET\Test1\obj\Debug\net7.0\Test1.genruntimeconfig.cache
 C:\Users\adria\source\repos\ASP\ASPNET\Test1\obj\Debug\net7.0\ref\Test1.dll
+C:\Users\adria\source\repos\ASP\ASPNET\Test1\bin\Debug\net7.0\MockQueryable.Core.dll
+C:\Users\adria\source\repos\ASP\ASPNET\Test1\bin\Debug\net7.0\nunit.framework.dll

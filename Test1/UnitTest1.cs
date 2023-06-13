@@ -1,61 +1,54 @@
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Routing;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Moq;
-using System;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
-using ASP.Data;
-using ASP.Models;
-using Microsoft.Extensions.DependencyInjection;
+using NUnit.Framework;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 
-using Microsoft.AspNetCore.Routing;
 
 namespace Test1
 {
     [TestClass]
     public class UnitTest1
     {
+        private static IWebDriver driver = new ChromeDriver();
+
+        [SetUp]
+        
+
+        public void Setup0() => driver.Navigate().GoToUrl("https://localhost:7169/Create");
+       
+
         [TestMethod]
-        public void TestMethod1()
+        public void Test()
         {
 
 
-            var serviceProvider = new ServiceCollection()
-                .AddEntityFrameworkInMemoryDatabase()
-                .BuildServiceProvider();
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            var name = driver.FindElement(By.Id("Name"));
+            var phone = driver.FindElement(By.Id("Phone"));
+            var reservationDate = driver.FindElement(By.Id("ReservationDate"));
+            var reservationDateEnd = driver.FindElement(By.Id("ReservationDateEnd"));
+            IWebElement createButton = driver.FindElement(By.CssSelector("input[type='submit']"));
+         
+            name.SendKeys("John Doe");
+            phone.SendKeys("1234567890");
+            reservationDate.SendKeys("25.06.2023");
+            reservationDateEnd.SendKeys("28.06.2023");
 
-            var builder = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseInMemoryDatabase("InMemoryDb")
-                .UseInternalServiceProvider(serviceProvider);
+            createButton.Click();
 
-
-            var httpContext = new DefaultHttpContext();
-            var modelState = new ModelStateDictionary();
-            var actionContext = new ActionContext(httpContext, new RouteData(), new PageActionDescriptor(), modelState);
-            var modelMetadataProvider = new EmptyModelMetadataProvider();
-
-            var viewData = new ViewDataDictionary(modelMetadataProvider, modelState);
-            var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
-
-
-            var pageContext = new PageContext(actionContext)
-            {
-                ViewData = viewData
-            };
-           
-
-
-
-
-
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(driver.Url.Contains("https://localhost:7169/Users"));
+     
         }
 
+        [TearDown]
+        public void Teardown()
+        {
 
-
-
+            driver.Quit();
+            driver.Dispose();
+        }
     }
-    
+
+
+
 }
